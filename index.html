@@ -16,15 +16,15 @@
 
     <!-- NAVIGATION -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">WebsiteTwo</a>
+      <a class="navbar-brand" href="#">Distribuidora Escocesa</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="#header">Home</a>
-          <a class="nav-item nav-link" href="#info-one">About</a>
-          <a class="nav-item nav-link" href="#contact">Contact</a>
+          <a class="nav-item nav-link" href="#header">Inicio</a>
+          <a class="nav-item nav-link" href="#info-one">Productos</a>
+          <a class="nav-item nav-link" href="#contact">Contactenos</a>
         </div>
       </div>
     </nav>
@@ -40,8 +40,8 @@
           </div>
           <div class="col-md-6 col-sm-6">
             <div class="header-content-right">
-              <h1 class="display-4">Sit asperiores voluptas atque autem?</h1>
-              <p class="mt-5">Amet possimus omnis dolore aliquid quam. Officiis nulla nam laudantium iure amet. Debitis maiores enim modi porro sunt. Ratione harum quasi odit nemo rerum eveniet dolorem quas rem asperiores voluptate!</p>
+              <h1 class="display-4">Productos</h1>
+              <p class="mt-5">Kola Escocesa es una bebida de exquisito sabor frutado que no contiene cafeína ó ácido fosfórico.</p>
               <a href="#" class="btn btn-outline-secondary header-btn btn-lg mt-2">Read More</a>
             </div>
           </div>
@@ -124,41 +124,34 @@
     <!-- SCROOLL REVEAL SCRIPT -->
     <script>
       window.sr = ScrollReveal();
-
     sr.reveal('.navbar', {
       duration: 2000,
       origin: 'bottom'
     });
-
     sr.reveal('.header-content-left', {
       duration: 2000,
       origin: 'top',
       distance: '300px'
     });
-
     sr.reveal('.header-content-right', {
       duration: 2000,
       origin: 'right',
       distance: '300px'
     });
-
     sr.reveal('.header-btn', {
       duration: 2000,
       delay: 1000, 
       origin: 'bottom'
     });
-
     sr.reveal('#testimonial div', {
       duration: 2000,
       origin: 'left',
       distance: '300px',
       viewFactor: 0.2
     });
-
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
         });
